@@ -1,0 +1,94 @@
+:root {
+  --rosaClaro: #f4b5c1;
+  --preto: #1d1a1a;
+  --rosa: #d18e9e;
+  --amarelo: #f7d488;
+  --branco: #f2f2f2;
+}
+
+.gallery-services img {
+  width: 180px;
+}
+
+.gallery-services div {
+  width: 4px;
+  height: 290px;
+  border-radius: 50px;
+  background-color: var(--amarelo);
+}
+
+section {
+  padding-bottom: 22px;
+  padding-left: 22px;
+  padding-right: 16px;
+  background-color: var(--rosaClaro);
+}
+
+section h1 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.gallery-services ul li {
+  font-size: 1.1em;
+}
+
+.gallery-services {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  justify-content: space-evenly;
+}
+.left {
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rosa);
+  width: 100%;
+  height: 70px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (min-width: 1000px) {
+  section h1 {
+    padding-top: 70px;
+  }
+
+  section {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: url(/assets/background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .right {
+    justify-content: flex-end;
+  }
+  .left {
+    justify-content: flex-start;
+  }
+
+  .gallery-services img {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .gallery-services ul li {
+    font-size: 1.2rem;
+    margin-right: 12px;
+    font-weight: 800;
+  }
+}

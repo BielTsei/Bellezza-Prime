@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+    <title>Bellezza Prime</title>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="./assets/logo.png" alt="" />
+      <nav id="nav">
+        <button id="btn-mobile">
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="contato.html">Agende um horário</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portifólio</a>
+          </li>
+          <li>
+            <a href="feedbacks.html">Feedbacks</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container-contato">
+      <section>
+        <h5>Agende seu horário</h5>
+        <div class="container-horario">
+          <form action="">
+            <div class="container-agendamento">
+              <label for="">Dia:</label>
+              <input type="date" name="date" id="date" required />
+            </div>
+            <div class="container-agendamento">
+              <label for="">Horário:</label>
+              <input type="time" name="time" id="time" required />
+            </div>
+            <div class="container-form">
+              <div>
+                <label for="">Nome: </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+              <div>
+                <label for="">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Seu melhor email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="">Telefone:</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Seu número de telefone"
+                  required
+                />
+              </div>
+            </div>
+            <div class="btn-submit">
+              <button type="submit" id="btn-submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contato">
+        <div>
+          <img src="./assets/location_on.png" alt="" />
+          <p>Rua das Flores Encantadas, 123, Jardim Sereno, Bellezza Vista</p>
+        </div>
+        <div>
+          <img src="./assets/Phone.png" alt="" />
+          <p>(11) 98765-4321</p>
+        </div>
+        <div>
+          <img src="./assets/Mail.png" alt="" />
+          <p>bellezzaprime@contato.com.br</p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Desenvolvido por &copy;Gabriel Tsei</p>
+    </footer>
+    <script src="/script-mobile.js"></script>
+  </body>
+</html>
